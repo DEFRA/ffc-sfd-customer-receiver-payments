@@ -10,10 +10,3 @@ services:
     environment:
       APPINSIGHTS_CLOUDROLE: ffc-sfd-customer-receiver-payments-local
       APPINSIGHTS_CONNECTIONSTRING: ${APPINSIGHTS_CONNECTIONSTRING}
-
-  ffc-sfd-customer-receiver-payments-postgres:
-    image: postgres:11.4-alpine
-    environment:
-      POSTGRES_DB: ffc-sfd-customer-receiver-payments
-      POSTGRES_PASSWORD: ppp
-      POSTGRES_USERNAME: postgres
