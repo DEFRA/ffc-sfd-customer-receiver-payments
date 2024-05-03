@@ -43,7 +43,7 @@ if (result.error) {
 }
 
 const receiverSubscription = {
-  ...result.value.paymentQueueQueue,
+  ...result.value.paymentQueue,
   ...result.value.receiverSubscription
 }
 
