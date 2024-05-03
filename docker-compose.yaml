@@ -5,8 +5,15 @@ services:
       target: production
     image: ffc-sfd-customer-receiver-payments
     container_name: ffc-sfd-customer-receiver-payments
-    depends_on:
-      - ffc-sfd-customer-receiver-payments-postgres
     environment:
       APPINSIGHTS_CLOUDROLE: ffc-sfd-customer-receiver-payments-local
       APPINSIGHTS_CONNECTIONSTRING: ${APPINSIGHTS_CONNECTIONSTRING}
+      MESSAGE_HOST: ${MESSAGE_HOST}
+      MESSAGE_USER: ${MESSAGE_USER}
+      MESSAGE_PASSWORD: ${MESSAGE_PASSWORD}
+      PAYMENTS_SUBSCRIPTION_ADDRESS: ${PAYMENTS_SUBSCRIPTION_ADDRESS}-${DEV_SUFFIX}
+      PAYMENTS_TOPIC_ADDRESS: ${PAYMENTS_TOPIC_ADDRESS}-${DEV_SUFFIX}
+      COSMOS_ENDPOINT: ${COSMOS_ENDPOINT}
+      COSMOS_KEY: ${COSMOS_KEY}
+      COSMOS_PAYMENTS_DATABASE: ${COSMOS_PAYMENTS_DATABASE}
+      COSMOS_PAYMENTS_CONTAINER: ${COSMOS_PAYMENTS_CONTAINER}
