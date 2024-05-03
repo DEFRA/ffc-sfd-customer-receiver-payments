@@ -1,4 +1,3 @@
-
 const init = async () => {
   console.log('Running receiver service for payments')
 }
