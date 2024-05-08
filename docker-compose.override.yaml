@@ -9,19 +9,10 @@ services:
     image: ffc-sfd-customer-receiver-payments-development
     container_name: ffc-sfd-customer-receiver-payments-development
     ports:
-      - "3000:3000"
-      - "9229:9229"
+      - "3013:3013"
+      - "9013:9229"
     volumes:
       - ./app:/home/node/app
       - ./test:/home/node/test
       - ./scripts:/home/node/scripts
       - ./package.json:/home/node/package.json
-
-  ffc-sfd-customer-receiver-payments-postgres:
-    ports:
-      - "5432:5432"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-
-volumes:
-  postgres_data:
