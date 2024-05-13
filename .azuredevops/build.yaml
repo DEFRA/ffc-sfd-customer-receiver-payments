@@ -41,6 +41,7 @@ resources:
 extends:
   template: /pipelines/common-app-build.yaml@DEFRA-ADPPipelineCommon
   parameters:
+    programmeName: "ffc"
     projectName: "ffc-sfd-customer-receiver-payments"
     serviceName: "ffc-sfd-customer-receiver-payments"
     deployFromFeature: ${{ parameters.deployFromFeature }}
