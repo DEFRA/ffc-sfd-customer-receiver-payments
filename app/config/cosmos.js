@@ -10,8 +10,8 @@ const schema = Joi.object({
 const config = {
   endpoint: process.env.COSMOS_ENDPOINT,
   key: process.env.COSMOS_KEY,
-  paymentsDatabase: process.env.COSMOS_PAYMENTS_DATABASE || 'ffc-sfd-customer-receiver-payments',
-  paymentsContainer: process.env.COSMOS_PAYMENTS_CONTAINER || 'payments-container'
+  paymentsDatabase: process.env.COSMOS_PAYMENTS_DATABASE,
+  paymentsContainer: process.env.COSMOS_PAYMENTS_CONTAINER
 }
 
 const { error, value } = schema.validate(config, { abortEarly: false })
