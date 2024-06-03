@@ -1,8 +1,8 @@
 const Joi = require('joi')
 
 const schema = Joi.object({
-  endpoint: Joi.string(),
-  key: Joi.string(),
+  endpoint: Joi.string().optional(),
+  key: Joi.string().optional(),
   paymentsDatabase: Joi.string().default('ffc-sfd-customer-receiver-payments'),
   paymentsContainer: Joi.string().default('payments-container')
 })
