@@ -7,4 +7,4 @@ namespaceTopics:
       - roleName: 'TopicSender'
       - roleName: 'TopicReceiver'
     topicSubscriptions:
-      - name: 'customer-receiver-payments'
+      - name: 'cr-payments'
