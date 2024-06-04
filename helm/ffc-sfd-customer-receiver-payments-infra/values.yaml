@@ -2,7 +2,7 @@
 # You may create Queues, Topics, Subscriptions, Storage Accounts, Databases and Role Assignments on these here.
 namespace: ffc-sfd
 namespaceTopics:
-  - name: ''
+  - name: 'customer-payments'
     roleAssignments:
       - roleName: 'TopicSender'
       - roleName: 'TopicReceiver'
