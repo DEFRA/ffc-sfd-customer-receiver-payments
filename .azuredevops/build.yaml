@@ -44,6 +44,7 @@ extends:
     programmeName: "ffc"
     projectName: "ffc-sfd-customer-receiver-payments"
     serviceName: "ffc-sfd-customer-receiver-payments"
+    teamname: "ffc-sfd"
     deployFromFeature: ${{ parameters.deployFromFeature }}
     deployConfigOnly: ${{ parameters.deployConfigOnly }}
     appBuildConfig:
