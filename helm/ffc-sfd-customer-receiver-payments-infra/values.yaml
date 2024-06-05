@@ -7,4 +7,4 @@ namespaceTopics:
       - roleName: 'TopicSender'
       - roleName: 'TopicReceiver'
     topicSubscriptions:
-      - name: 'ffc-sfd-customer-receiver-payments'
+      - name: 'customer-receiver-payments'
