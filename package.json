@@ -1,6 +1,6 @@
 {
   "name": "ffc-sfd-customer-receiver-payments",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "description": "",
   "homepage": "github.com?owner=defra&repo=ffc-sfd-customer-receiver-payments&organization=defra",
   "main": "app/index.js",
@@ -20,6 +20,7 @@
   "license": "OGL-UK-3.0",
   "dependencies": {
     "@azure/cosmos": "4.0.0",
+    "@azure/identity": "4.3.0",
     "@hapi/hapi": "21.3.2",
     "applicationinsights": "2.8.0",
     "ffc-messaging": "2.10.0",

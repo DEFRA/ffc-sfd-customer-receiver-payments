@@ -1,9 +1,12 @@
 const { paymentsDatabase } = require('./database')
 
-const cosmos = async () => {
-  const cosmos = {}
-  cosmos.paymentsDatabase = await paymentsDatabase()
-  return cosmos
+const cosmosInstance = async () => {
+  try {
+    const cosmos = {}
+    cosmos.paymentsDatabase = await paymentsDatabase()
+    return cosmos
+  } catch (error) {
+    console.error('Error creating Cosmos instance:', error)
+  }
 }
-
-module.exports = cosmos
+module.exports = cosmosInstance
