@@ -12,8 +12,6 @@ const schema = Joi.object({
 const config = {
   endpoint: process.env.COSMOS_ENDPOINT,
   key: process.env.COSMOS_KEY,
-  paymentsDatabase: 'ffc-sfd-customer-receiver-payments',
-  paymentsContainer: 'payments-container',
   managedIdentityClientId: process.env.AZURE_CLIENT_ID
 }
 
